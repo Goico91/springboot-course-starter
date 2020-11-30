@@ -1,0 +1,25 @@
+# ===================================================================
+# Standard Spring Boot properties.
+# Full reference is available at:
+# http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+# ===================================================================
+
+# # ===============================
+# = HTTP Server
+# # ===============================
+server:
+  servlet:
+    contextPath: /api/v1
+
+# # ===============================
+# = SPRING BOOT GENERAL
+# # ===============================
+spring:
+  profiles:
+    active: @spring.profiles.active@
+  application:
+    name: springboot-course-starter
+  messages:
+    basename: i18n/messages
+  locale:
+    default: en
