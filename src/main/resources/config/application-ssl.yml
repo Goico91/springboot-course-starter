@@ -1,0 +1,23 @@
+# ===================================================================
+# Fichero de configuración Entorno Desarrollo
+# ===================================================================
+
+# # ===============================
+# = HTTP Server
+# # ===============================
+server:
+  port: 8443
+  ssl:
+    key-store: classpath:keystore.p12
+    key-store-password: password
+    key-store-type: pkcs12
+    key-alias: tomcat
+    key-password: password
+
+
+# # ===============================
+# = SPRING BOOT GENERAL
+# # ===============================
+spring:
+  profiles:
+    active: ssl
